@@ -1,0 +1,56 @@
+@url=http://localhost:8080
+
+###
+get {{url}}/word
+
+###
+post {{url}}/sign
+Content-Type: application/json
+
+{
+    "title": "1123"
+}
+
+###
+get {{url}}/test
+
+###
+post {{url}}/addSign
+Content-Type: application/json
+
+{
+    "title": "学习高数"
+}
+
+###
+post {{url}}/Signin
+
+Content-Type: application/json
+
+{"comment":"秋啊",
+"lists":[
+    "5f7c0902506aec4380f3b53a",
+    "5f7c0907506aec4380f3b53b",
+    "5f7c09447eaabe253cc72f84"
+    ],
+"timeStamp":1601136000000
+}
+
+###
+get {{url}}/statistic?startTime=1599440808000&endTime=1602032808000
+
+###
+get {{url}}/calendar?startTime=1601136000000&endTime=1604073600000
+
+###
+get {{url}}/journal
+
+###
+post {{url}}/notes
+Content-Type: application/json
+
+{
+    "url": "http://localhost:8080/uploads/恋恋有词-1602253835662.html",
+    "notesName": "恋恋有词",
+    "timeStamp": "2020-10-08 14:09:10.000"
+}
